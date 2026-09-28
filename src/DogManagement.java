@@ -127,6 +127,12 @@ public class DogManagement {
     }
 //Method for Changing Dog Record
     public static void updateDogRecord() {
+	
+		System.out.println("All Dogs Avaible to Update: ");
+		
+		for(int i=0; i< dogCount; i++) {
+			System.out.println("Dog ID: " + dogID[i] +" "+ dogNames[i]);
+		}
         System.out.print("Enter dog ID to update: ");
         int dogID = Integer.parseInt(scn.nextLine());
         
