@@ -1,7 +1,7 @@
 /*--------------------------------------------
 Program 5: MPLS Dog Management System
 	
-    [REPLACE MY INFORMATION WITH YOURS]
+
     Course: COMP 170, Fall 2026
     System: Visual Studio Code, Windows 10
     Author: M. Crenshaw
@@ -71,7 +71,7 @@ public class DogManagement {
 
         return menuOption;
     }
-
+//Method for Creating Dog Records
     public static void createDogRecord() {
 
         String name;
@@ -95,7 +95,7 @@ public class DogManagement {
         dogWeight[dogCount] = weight;
         dogAge[dogCount]= age;
         dogIDs[dogCount] = dogID;
-
+//System Displays Output Data
         System.out.println("The following information has been entered into the system: ");
         System.out.println("Dog ID: " + dogIDs[dogCount]);
         System.out.println("Dog Name: " + dogNames[dogCount]);
@@ -103,11 +103,11 @@ public class DogManagement {
         System.out.println("Dog Age: " + dogAge[dogCount]);
         dogCount++;
     }
-  
+  //Method for Find dog Record
     public static void findDogRecord() {
         System.out.print("Enter dog ID to search for: ");
         int dogID = Integer.parseInt(scn.nextLine());
-
+//If statements for Count and finding dogID
         int dogIndex = -1;
         for (int i = 0; i < dogCount; i++) {
             if (dogIDs[i] == dogID) {
@@ -125,7 +125,7 @@ public class DogManagement {
             System.out.println("Dog record not found.");
         }
     }
-
+//Method for Changing Dog Record
     public static void updateDogRecord() {
         System.out.print("Enter dog ID to update: ");
         int dogID = Integer.parseInt(scn.nextLine());
